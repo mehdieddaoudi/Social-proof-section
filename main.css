@@ -1,0 +1,237 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.parent {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+.my-project {
+    width: 1000px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.my-project .haeding {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 250px;
+}
+
+.my-project .haeding .part1 {
+    width: 35%;
+}
+
+.my-project .haeding .part1 h1 {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    width: 210px;
+}
+
+.my-project .haeding .part1 small {
+    color: hsl(303, 10%, 53%);
+}
+
+.my-project .haeding .part2 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.my-project .haeding .part2 .form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+    background-color: hsl(333deg 80% 67% / 8%);
+    border-radius: 10px;
+}
+
+.my-project .haeding .part2 .form:nth-child(1) {
+    margin-left: -100px;
+    margin-right: 100px;
+}
+
+.my-project .haeding .part2 .form:nth-child(2) {
+    margin-left: -50px;
+    margin-right: 50px;
+}
+
+.my-project .haeding .part2 .form:nth-child(3) {
+    margin-right: 0px;
+}
+
+.my-project .haeding .part2 .form .star {
+    gap: 4px;
+    display: flex;
+}
+
+.my-project .haeding .part2 .form p {
+    color: hsl(300, 43%, 22%);
+    font-weight: 500;
+}
+
+.my-project .footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.my-project .footer .mehdi {
+    background-color: hsl(300, 43%, 22%);
+    padding: 24px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.my-project .footer .mehdi .asma img {
+    border-radius: 50%;
+    width: 40px;
+    height: 43px;
+}
+
+.footer .mehdi .asma .text {
+    line-height: 1.3;
+    margin-left: 15px;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .mehdi .asma .text h5 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.footer .mehdi .asma .text p {
+    color: hsl(333, 80%, 67%);
+    margin-top: 0;
+    font-size: 13px;
+}
+
+.footer .mehdi .paragraph small {
+    color: hsl(0, 0%, 100%);
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+.footer .mehdi .asma {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.footer .mehdi:nth-child(2) {
+    margin-top: 20px;
+}
+
+.footer .mehdi:nth-child(3) {
+    margin-top: 40px;
+}
+
+@media (max-width:950px) {
+    .parent {
+        width: 100%;
+        height: auto;
+        background-color: hsl(300, 24%, 96%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        flex-direction: column;
+    }
+
+    .my-project {
+        width: 300px;
+        padding: 20px;
+    }
+
+    .my-project .haeding {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .my-project .haeding {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+    }
+
+    .my-project .haeding .part1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .my-project .haeding .part1 h1 {
+        color: hsl(300, 43%, 22%);
+        font-weight: 700;
+        width: 100%;
+    }
+
+    .my-project .haeding .part2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 35px;
+    }
+
+
+
+    .my-project .haeding .part2 .form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 5px;
+        background-color: hsl(333deg 80% 67% / 8%);
+        border-radius: 10px;
+        flex-direction: column;
+    }
+
+    .my-project .haeding .part2 .form:nth-child(1) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .my-project .haeding .part2 .form:nth-child(2) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .my-project .footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .footer .mehdi:nth-child(3) {
+        margin-top: 20px;
+    }
+}
